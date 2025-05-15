@@ -1,12 +1,4 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
-import { render, screen } from '@testing-library/react';
-
-// Mock the App component
-vi.mock('./App', () => ({
-  default: () => {
-    return <div>Mocked App</div>;
-  }
-}));
 
 // Mock localStorage
 const localStorageMock = (function() {
